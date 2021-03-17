@@ -59,7 +59,7 @@ footer {
     background-color: #242423;
     color: #eae0d5;
     height: 100px;
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
