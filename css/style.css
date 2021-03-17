@@ -1,0 +1,58 @@
+.navbar {
+    min-height: 30px;
+    background-color: rgba(36, 36, 35, 0);
+    font-family: Quicksand, sans-serif;
+
+    -webkit-transition: background-color 200ms linear; -moz-transition: background-color 200ms linear; -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.navbar-brand-sm {
+    color: #e8eddf;
+    margin-right: 50px;
+}
+
+.navbar-brand-sm::hover {
+    color: #e8eddf;
+}
+
+.bg {
+    background: url("../img/parallax.jpg") right bottom no-repeat fixed;
+    filter: brightness(40%);
+    background-size: cover;
+    height: 300px;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.intro {
+    position: absolute;
+    left: 20%;
+    top: 80px;
+}
+
+.intro h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 45px;
+    color: #e8eddf;
+    text-transform: uppercase;
+}
+
+.intro p {
+    font-family: Oswald, sans-serif;
+    font-size: 25px;
+    color: #cfdbd5;
+}
+
+.scrolled {
+    background-color: rgba(36, 36, 35, 1);
+    -webkit-transition: background-color 200ms linear; -moz-transition: background-color 200ms linear; -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+footer {
+    background-color: #242423;
+    color: #eae0d5;
+    height: 70px;
+    text-align: center;
+}
