@@ -1,44 +1,55 @@
-html {
+html, body {
     scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
-    background-color: rgba(36, 36, 35, 0.75);
+    background-color: rgba(36, 36, 35, 0.8);
     font-family: Quicksand, sans-serif;
 }
 
 .navbar-brand-sm {
+    background-color: rgba(36, 36, 35, 1);
     color: #e8eddf;
     margin-right: 30px;
 }
 
-.nav>li>a:hover, .navbar-brand-sm:hover {
+/* .nav>li>a:hover, .navbar-brand-sm:hover {
     color: #e8eddf;
     text-decoration: underline;
-}
+} */
 
 .bg {
-    background: url("/img/parallax.jpg") right bottom no-repeat fixed;
-    filter: brightness(40%);
+    background-color: black;
+    background-image: url("/img/parallax.jpg");
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(40%);
     height: 300px;
     max-width: 100%;
     margin-bottom: 25px;
 }
 
 .intro {
+    background-color: transparent;
     position: absolute;
     left: 20%;
     top: 80px;
     font-family: Oswald, sans-serif;
     font-size: 45px;
-    color: #e8eddf;
+    color: white;
 }
 
 .intro p {
-    font-family: Oswald, sans-serif;
     font-size: 25px;
-    color: #cfdbd5;
 }
 
 .umich {
@@ -47,22 +58,26 @@ html {
 
 .scrolled {
     background-color: rgba(36, 36, 35, 0.9);
-    -webkit-transition: background-color 200ms linear; -moz-transition: background-color 200ms linear; -ms-transition: background-color 200ms linear;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
 }
 
+main.container {
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
 footer {
+    flex-shrink: 0;
+    background-color: #242423;
     width: 100%;
     font-size: 17px;
     text-align: center;
     font-family: Quicksand, sans-serif;
-    background-color: #242423;
     color: #eae0d5;
     height: 100px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding-top: 10px;
 }
 
@@ -74,7 +89,8 @@ footer hr {
     background: #e8eddf;
 }
 
-.social {
+ul.social {
+    margin: 0 auto;
     padding-top: 0px;
 }
 
@@ -88,4 +104,11 @@ footer hr {
     border: 2px solid grey;
     color: #e8eddf;
     padding: 7px;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+        /* Removes scroll animation */
+    }
 }
