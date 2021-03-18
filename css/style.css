@@ -56,13 +56,13 @@ body {
     color: #FFCB05;
 }
 
-.scrolled {
+/* .scrolled {
     background-color: rgba(36, 36, 35, 0.9);
     -webkit-transition: background-color 200ms linear;
     -moz-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
-}
+} */
 
 main.container {
     flex: 1 0 auto;
