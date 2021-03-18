@@ -28,7 +28,7 @@ body {
     background-color: black;
     background-image: url("../img/parallax.jpg");
     background-attachment: fixed;
-    background-position: right bottom;
+    background-position: right 15% top;
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(40%);
@@ -109,5 +109,11 @@ ul.social {
     html {
         scroll-behavior: auto;
         /* Removes scroll animation */
+    }
+}
+
+@media (min-width: 768px) {
+    .bg {
+        background-position: right 15% top;
     }
 }
