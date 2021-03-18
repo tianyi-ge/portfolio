@@ -28,9 +28,9 @@ body {
     background-color: black;
     background-image: url("../img/parallax.jpg");
     background-attachment: fixed;
-    background-position: right 15% top;
+    background-position: right 30% top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 325px;
     filter: brightness(40%);
     height: 300px;
     max-width: 100%;
@@ -115,5 +115,6 @@ ul.social {
 @media (min-width: 768px) {
     .bg {
         background-position: right 15% top;
+        background-size: cover;
     }
 }
