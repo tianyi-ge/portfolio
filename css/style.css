@@ -47,13 +47,12 @@ body {
 
 .bg {
     background-color: var(--color6);
-    background-image: url("../img/bg.jpg");
     background-attachment: fixed;
-    background-position: top left 35%;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(90%);
-    min-height: 300px;
+    filter: brightness(85%);
+    /* opacity: 0.85; */
+    min-height: 450px;
     max-width: 100%;
 }
 
@@ -150,11 +149,11 @@ ul.social {
     font-size: 28px;
 }
 
-/* education */
-#education.bg {
-    background-image: url("../img/ji.jpg");
+.text {
+    margin-bottom: 70px;
 }
 
+/* education */
 #edu-container {
     margin-top: 30px;
     font-family: Poppins, sans-serif;
@@ -164,6 +163,7 @@ ul.social {
     box-shadow: 2px 2px 8px var(--color4);
     color: var(--color6);
     padding: 20px;
+    max-width: 400px;
 }
 
 .edu-card h4 {
@@ -176,6 +176,18 @@ ul.social {
     color: var(--color4);
     font-size: 14px;
     margin-top: 5px;
+}
+
+/* work */
+#work.bg {
+    background-image: url("../img/suit.jpg");
+    background-position: bottom left 35%;
+}
+
+/* research */
+#research.bg {
+    background-image: url("../img/duder.jpg");
+    background-position: bottom right 25%;
 }
 
 
