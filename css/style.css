@@ -66,19 +66,19 @@ body {
 }
 
 .intro h2 {
-    font-size: 35px;
+    font-size: 38px;
     color: var(--color7);
 }
 
 .intro h3 {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--color5);
 }
 
 .intro .avatar {
     margin: 0 auto;
     border-radius:50%;
-    max-height: 180px;
+    max-height: 210px;
     overflow: hidden;
     margin-bottom: 20px;
     box-shadow: 0 0 10px var(--color3);
@@ -90,11 +90,11 @@ body {
 
 main.container {
     flex: 1 0 auto;
-    padding: 70px 30px;
+    padding: 70px 45px;
 }
 
 main p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 footer {
@@ -128,10 +128,11 @@ ul.social {
 }
 
 .social-icon i {
-    font-size: 1em;
+    font-size: 1.8em;
     /* border-radius: 50%; */
     /* border: 2px solid grey; */
     color: var(--color6);
+    width: 35px;
 }
 
 #copyright {
