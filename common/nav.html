@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-    <a class="navbar-brand-sm" href="#page-top">Tianyi - 葛天逸</a>
+<nav class="navbar navbar-expand-sm navbar-light fixed-top">
+    <a class="navbar-brand-sm" href="#page-top">/home/tianyi/<span id="page-name">about</span></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
@@ -9,21 +9,31 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="index.html" id="about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="education.html">Education</a>
+                <a class="nav-link" href="education.html" id="education">Education</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#research">Research</a>
+                <a class="nav-link" href="#research" id="research">Research</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#interests">Interests</a>
+                <a class="nav-link" href="#interests" id="interests">Interests</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact" id="contact">Contact</a>
             </li>
         </ul>
-
     </div>
+    <script>
+        active_page = location.href.split('/').pop().split('#').shift().split('.').shift();
+        if (active_page == 'index') active_page = 'about';
+        try {
+            document.getElementById("page-name").textContent = active_page;
+            $('#'+active_page).addClass('active');
+        } catch (e) {
+            console.log(e);
+        }
+        
+    </script>
 </nav>
