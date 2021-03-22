@@ -26,8 +26,10 @@
         </ul>
     </div>
     <script>
-        active_page = location.href.split('/').pop().split('#').shift().split('.').shift();
-        if (active_page == 'index' || active_page == 'portfolio') active_page = 'about';
+        var active_page = location.href.split('/').pop().split('#').shift().split('.').shift();
+        if (active_page == 'index' || active_page == 'portfolio' || active_page == '') {
+            active_page = 'about';
+        }
         try {
             document.getElementById("page-name").textContent = active_page;
             $('#'+active_page).addClass('active');

@@ -49,18 +49,18 @@ body {
     background-color: var(--color6);
     background-image: url("../img/bg.jpg");
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: top left 35%;
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(90%);
-    height: 300px;
+    min-height: 300px;
     max-width: 100%;
-    margin-bottom: 25px;
 }
 
 .intro {
     font-family: Poppins, sans-serif;
     text-align: center;
+    margin-top: 30px;
     margin-bottom: 70px;
 }
 
@@ -95,7 +95,7 @@ main.container {
 }
 
 main p {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 footer {
@@ -113,7 +113,7 @@ footer {
 
 footer hr {
     position: relative;
-    width: 80px;
+    width: 90px;
     margin: 0 auto;
     margin-top: -15px;
     background: var(--color6);
@@ -148,6 +148,34 @@ ul.social {
 .text h2 {
     font-family: Poppins, sans-serif;
     font-size: 28px;
+}
+
+/* education */
+#education.bg {
+    background-image: url("../img/ji.jpg");
+}
+
+#edu-container {
+    margin-top: 30px;
+    font-family: Poppins, sans-serif;
+}
+
+.edu-card {
+    box-shadow: 2px 2px 8px var(--color4);
+    color: var(--color6);
+    padding: 20px;
+}
+
+.edu-card h4 {
+    display: inline;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.edu-card p {
+    color: var(--color4);
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 
