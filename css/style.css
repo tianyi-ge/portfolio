@@ -45,13 +45,22 @@ body {
     text-decoration: underline;
 }
 
+#gototop {
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: var(--color3);
+    opacity: 0.7;
+}
+
 .bg {
     background-color: var(--color6);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(85%);
-    /* opacity: 0.85; */
+    filter: brightness(80%);
     min-height: 450px;
     max-width: 100%;
 }
@@ -154,33 +163,37 @@ ul.social {
 }
 
 /* education */
-#edu-container {
-    margin-top: 30px;
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-content:stretch;
     font-family: Poppins, sans-serif;
 }
 
-.edu-card {
+.card {
+    display: inline;
     box-shadow: 2px 2px 8px var(--color4);
     color: var(--color6);
-    padding: 20px;
+    padding: 20px 20px 5px 20px;
     max-width: 400px;
+    margin: 10px;
 }
 
-.edu-card h4 {
+.card h4 {
     display: inline;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 25px;
 }
 
-.edu-card p {
+.card p {
     color: var(--color4);
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 5px;
 }
 
 /* work */
 #work.bg {
-    background-image: url("../img/suit.jpg");
+    background-image: url("../img/work.jpg");
     background-position: bottom left 35%;
 }
 
