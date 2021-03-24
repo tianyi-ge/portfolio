@@ -20,7 +20,6 @@ body {
     flex-direction: column;
 }
 
-
 .navbar {
     background-color: var(--gradient-color);
     background-image: var(--gradient-img);
@@ -62,7 +61,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(80%);
+    filter: brightness(70%);
     min-height: 450px;
     max-width: 100%;
 }
@@ -88,7 +87,7 @@ body {
 
 .intro .avatar {
     margin: 0 auto;
-    border-radius:50%;
+    border-radius: 50%;
     max-height: 210px;
     overflow: hidden;
     margin-bottom: 20px;
@@ -173,6 +172,7 @@ ul.social {
 }
 
 /* education */
+
 .card-container {
     display: flex;
     flex-flow: column wrap;
@@ -210,20 +210,30 @@ ul.social {
 }
 
 /* work */
+
 #work.bg {
     background-image: url("../img/work.jpg");
     background-position: bottom left 35%;
 }
 
 /* research */
+
 #research.bg {
     background-image: url("../img/duder.jpg");
     background-position: bottom right 25%;
 }
 
 /* interests */
+
 #interests.bg {
     background-image: url("../img/desk.jpg");
+    background-position: bottom right 25%;
+}
+
+/* contact */
+
+#contact.bg {
+    background-image: url("../img/alex.jpg");
     background-position: bottom right 25%;
 }
 
@@ -263,15 +273,55 @@ ul.social {
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(80%);
-    min-height: 150px;
+    min-height: 80px;
     max-width: 100%;
 }
 
 #interests.parallax {
     background-image: url("../img/duncan.jpg");
-    background-position: bottom right 25%;
+    background-position: center;
 }
 
+/* contact */
+
+#contact fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+form#contact {
+    max-width: 380px;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+#contact input, textarea {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact textarea {
+    min-height: 120px;
+}
+
+#contact button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background-color: var(--color4);
+    color: white;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
 
 @media screen and (prefers-reduced-motion: reduce) {
     html {
