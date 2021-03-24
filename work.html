@@ -20,44 +20,53 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-        <script>
-            $(function () {
-                $("#nav-placeholder").load("./common/nav.html");
-                $("#footer-placeholder").load("./common/footer.html");
-            });
-        </script>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("./common/nav.html");
+            $("#footer-placeholder").load("./common/footer.html");
+        });
+    </script>
     <title>Tianyi Ge</title>
 </head>
 
 <body id="page-top">
     <div id="nav-placeholder"></div>
-    
+
     <div class="bg" id="work"></div>
 
-    <main class="container">
-        <div class="work text">
-            <a id="work"></a>
-            <h2>Work Experience</h2>
-            <div class="card-container">
-                <div class="card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h4 class="company"><b>Huawei, Intelligent EdgeFabric</b></h4>
-                    <p class="position">R&D Intern in cloud computing</p>
-                    <p class="date">Jul 2020 - Sep 2020</p>
-                    <p class="location">Hangzhou, China</p>
+    <main class="main-container">
+        <div class="subcontainer">
+            <div class="work text">
+                <a id="work"></a>
+                <h2>Work Experience</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <i class="fas fa-laptop-house"></i>
+                        <h4 class="company"><b>Huawei, Intelligent EdgeFabric</b></h4>
+                        <div class="info">
+                            <div class="position">R&D Intern in cloud computing</div>
+                            <div class="location">Hangzhou, China</div>
+                            <div class="date">Jul 2020 - Sep 2020</div>
+                            <div class="more">
+                                + more
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="teach text">
-            <a id="teach"></a>
-            <h2>Teaching Experience</h2>
-            <div class="card-container">
-                <div class="card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h4 class="course"><b>Programming & Data Structures</b></h4>
-                    <p class="position">Shanghai Jiao Tong University</p>
-                    <p class="date">Summer 2019</p>
+            <div class="teach text">
+                <a id="teach"></a>
+                <h2>Teaching Experience</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4 class="course"><b>Programming & Data Structures</b></h4>
+                        <div class="info">
+                            <div class="position">Shanghai Jiao Tong University</div>
+                            <div class="date">Summer 2019</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

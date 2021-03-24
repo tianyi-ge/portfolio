@@ -46,13 +46,15 @@ body {
 }
 
 #gototop {
+    z-index: 1;
     border-radius: 50%;
     position: fixed;
     bottom: 20px;
     right: 30px;
     font-size: 40px;
+    background-color: var(--coo);
     color: var(--color3);
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .bg {
@@ -97,13 +99,16 @@ body {
     display: block;
 }
 
-main.container {
+main.main-container {
     flex: 1 0 auto;
-    padding: 70px 45px;
 }
 
 main p {
     font-size: 14px;
+}
+
+.subcontainer {
+    margin: 70px 25px;
 }
 
 footer {
@@ -158,6 +163,11 @@ ul.social {
     font-size: 28px;
 }
 
+.text h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+}
+
 .text {
     margin-bottom: 70px;
 }
@@ -165,8 +175,7 @@ ul.social {
 /* education */
 .card-container {
     display: flex;
-    flex-direction: column;
-    align-content:stretch;
+    flex-flow: column wrap;
     font-family: Poppins, sans-serif;
 }
 
@@ -174,21 +183,30 @@ ul.social {
     display: inline;
     box-shadow: 2px 2px 8px var(--color4);
     color: var(--color6);
-    padding: 20px 20px 5px 20px;
-    max-width: 400px;
+    padding: 10px 20px 20px 10px;
+    max-width: 380px;
     margin: 10px;
 }
 
 .card h4 {
     display: inline;
     font-size: 14px;
-    margin-bottom: 25px;
+    /* margin-bottom: 35px; */
 }
 
-.card p {
-    color: var(--color4);
+.card .info {
+    margin-left: 20px;
+    margin-top: 8px;
     font-size: 12px;
-    margin-top: 5px;
+}
+
+.card .more {
+    color: var(--color4);
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    text-decoration: underline;
 }
 
 /* work */
@@ -200,6 +218,57 @@ ul.social {
 /* research */
 #research.bg {
     background-image: url("../img/duder.jpg");
+    background-position: bottom right 25%;
+}
+
+/* interests */
+#interests.bg {
+    background-image: url("../img/desk.jpg");
+    background-position: bottom right 25%;
+}
+
+.subsection {
+    padding: 20px 20px 40px 20px;
+    /* background-color: var(--color2); */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px 4px;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.gallery img {
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+    box-shadow: 0 0 3px var(--color6);
+}
+
+.wide {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+.parallax {
+    background-color: var(--color6);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(80%);
+    min-height: 150px;
+    max-width: 100%;
+}
+
+#interests.parallax {
+    background-image: url("../img/duncan.jpg");
     background-position: bottom right 25%;
 }
 
