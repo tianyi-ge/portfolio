@@ -69,7 +69,7 @@ body {
 .intro {
     font-family: Poppins, sans-serif;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 85px;
     margin-bottom: 70px;
 }
 
@@ -107,7 +107,7 @@ main p {
 }
 
 .subcontainer {
-    margin: 70px 25px;
+    margin: 70px 25px 20px 25px;
 }
 
 footer {
@@ -168,7 +168,7 @@ ul.social {
 }
 
 .text {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 /* education */
@@ -183,7 +183,7 @@ ul.social {
     display: inline;
     box-shadow: 2px 2px 8px var(--color4);
     color: var(--color6);
-    padding: 10px 20px 20px 10px;
+    padding: 20px 20px 20px 20px;
     max-width: 380px;
     margin: 10px;
 }
@@ -209,11 +209,21 @@ ul.social {
     text-decoration: underline;
 }
 
+.card img {
+    max-width: 100%;
+    margin: 0 auto 25px auto;
+}
+
 /* work */
 
 #work.bg {
     background-image: url("../img/work.jpg");
     background-position: bottom left 35%;
+}
+
+.card button {
+    background: transparent;
+    border: none;
 }
 
 /* research */
@@ -226,8 +236,8 @@ ul.social {
 /* interests */
 
 #interests.bg {
-    background-image: url("../img/desk.jpg");
-    background-position: bottom right 25%;
+    background-image: url("../img/nddp.jpg");
+    background-position: bottom center;
 }
 
 /* contact */
@@ -273,7 +283,7 @@ ul.social {
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(80%);
-    min-height: 80px;
+    min-height: 100px;
     max-width: 100%;
 }
 

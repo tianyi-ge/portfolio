@@ -26,6 +26,7 @@
             $("#footer-placeholder").load("./common/footer.html");
         });
     </script>
+    <script src="assets/js/collapse.js"></script>
     <title>Tianyi Ge</title>
 </head>
 
@@ -47,8 +48,38 @@
                             <div class="position">R&D Intern in cloud computing</div>
                             <div class="location">Hangzhou, China</div>
                             <div class="date">Jul 2020 - Sep 2020</div>
-                            <div class="more">
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#ief" id="ief" value="more">
                                 + more
+                            </button>
+                            <div class="description collapse" id="ief">
+                                <hr>
+                                <ul>
+                                    <li>Monitored the status of core components in bash</li>
+                                    <li>Report warnings of component nodes to the central service dashboard</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fas fa-laptop-house"></i>
+                        <h4 class="company"><b>Smart & Sustainable Automation Lab</b></h4>
+                        <div class="info">
+                            <div class="position">Backend developer / Research Assistant</div>
+                            <div class="location">Ann Arbor, U.S.</div>
+                            <div class="date">Feb 2020 - Aug 2020</div>
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#s2a" id="s2a" value="more">
+                                + more
+                            </button>
+                            <div class="description collapse" id="s2a">
+                                <hr>
+                                <ul>
+                                    <li>Built an AWS-based Cloud 3D printing platform</li>
+                                    <li>Built look-free batched command buffers on edge side (Raspberry Pi) to smooth nozzle vibration
+                                    <li>Automated user registration, job creation, and device provisioning based on Lambda, Dynamo, S3, SNS, etc</li>
+                                    <li>Containerized the application as a serverless Fargate task and routed the traffic through NAT Gateway</li>
+                                </ul>
+                                <img src="img/ulendo.jpg" alt="ulendo">
                             </div>
                         </div>
                     </div>
@@ -60,11 +91,63 @@
                 <h2>Teaching Experience</h2>
                 <div class="card-container">
                     <div class="card">
-                        <i class="fas fa-graduation-cap"></i>
+                        <i class="fas fa-school"></i>
                         <h4 class="course"><b>Programming & Data Structures</b></h4>
                         <div class="info">
                             <div class="position">Shanghai Jiao Tong University</div>
                             <div class="date">Summer 2019</div>
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#ve280" id="ve280" value="more">
+                                + more
+                            </button>
+                            <div class="description collapse" id="ve280">
+                                <hr>
+                                <ul>
+                                    <li>Prepared testcases for 5 major projects</li>
+                                    <li>Participated in Online Judge maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fas fa-school"></i>
+                        <h4 class="course"><b>Advanced Academic Writing</b></h4>
+                        <div class="info">
+                            <div class="position">Shanghai Jiao Tong University</div>
+                            <div class="date">Summer 2019</div>
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#ve496" id="ve496" value="more">
+                                + more
+                            </button>
+                            <div class="description collapse" id="ve496">
+                                <hr>
+                                <ul>
+                                    <li>Prepared workshops on academic communications</li>
+                                    <li>Arranged mock job interviews</li>
+                                </ul>
+                                <img src="img/ve496.jpg" alt="ve496 staff">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fas fa-school"></i>
+                        <h4 class="course"><b>Discrete Mathematics</b></h4>
+                        <div class="info">
+                            <div class="position">Shanghai Jiao Tong University</div>
+                            <div class="date">Fall 2018</div>
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#ve203" id="ve203" value="more">
+                                + more
+                            </button>
+                            <div class="description collapse" id="ve203">
+                                <hr>
+                                <ul>
+                                    <li>Prepared review class and lecture notes in LateX</li>
+                                    <li>Held regular review class and office hours</li>
+                                    <li>Graded exam papers and assignments</li>
+                                    <li>Awarded Excellent Teaching Assistant of 18 Fall</li>
+                                </ul>
+                                <img src="img/ve203.jpg" alt="ve203 staff">
+                            </div>
                         </div>
                     </div>
                 </div>
