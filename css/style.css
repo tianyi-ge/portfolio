@@ -153,7 +153,7 @@ ul.social {
     margin-top: 20px;
 }
 
-.text .href {
+.text a {
     color: var(--color4);
 }
 

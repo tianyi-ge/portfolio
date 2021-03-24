@@ -26,6 +26,7 @@
             $("#footer-placeholder").load("./common/footer.html");
         });
     </script>
+    <script src="assets/js/collapse.js"></script>
     <title>Tianyi Ge</title>
 </head>
 
@@ -34,11 +35,71 @@
 
     <div class="bg" id="research"></div>
 
+
     <main class="main-container">
         <div class="subcontainer">
             <div class="research text">
                 <a id="research"></a>
-                <h2>Research experience</h2>
+                <h2>Research Experience</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4 class="project"><b>Investigation of MongoDB Storage in Erasure Coding Manner</b></h4>
+                        <div class="info">
+                            <div class="advisor">
+                                <ul>
+                                    <li><a
+                                        href="https://web.eecs.umich.edu/~harshavm/">Prof. Harsha V. Madhyastha</a></li>
+                                    <li><a
+                                        href="https://uluyol.xyz/">Muhammed Uluyol</a></li>
+                                    <li>Tianyu (Kevin) Chen</li>
+                                </ul>
+                            </div>
+                            <div class="location">Ann Arbor, U.S.</div>
+                            <div class="date">Sep 2020 - Present</div>
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#mongo"
+                                id="mongo" value="more">
+                                + more
+                            </button>
+                            <div class="description collapse" id="mongo">
+                                <hr>
+                                <ul>
+                                    <li>Extend query operations of MongoDB to support erasure coded documents</li>
+                                    <li>Port the “fast read quorum” optimization toMongoDBto relax quorum intersection requirement</li>
+                                    <li>Benchmarked the impact on CPU usage, disk utilization, latency SLO, etc with YCSB under different workloads</li> <li>Saved 47% data storage and 28% total storage of MongoDB replica sets that can tolerate 1 node failure</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4 class="project"><b>Joint Task Scheduling and Containerizing for Efficient Edge Computing</b></h4>
+                        <div class="info">
+                            <div class="advisor">
+                                <ul>
+                                    <li><a
+                                        href="http://wanglab.sjtu.edu.cn/en/content.aspx?info_lb=472&flag=295">Prof. Xudong Wang</a></li>
+                                    <li><a href="https://scholar.google.com/citations?user=5SZyUVIAAAAJ&hl=en">Dr. Jiawei Zhang</a></li>
+                                </ul>
+                            </div>
+                            <div class="location">Shanghai, China</div>
+                            <div class="date">Oct 2018 - Feb 2021</div>
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#wang"
+                                id="wang" value="more">
+                                + more
+                            </button>
+                            <div class="description collapse" id="wang">
+                                <hr>
+                                <ul>
+                                    <li>Modeled four offline heuristics to optimize task containerization and scheduling</li>
+                                    <li>Simulated and visualized the performance of heuristics given different core number and isolation constraints</li>
+                                    <li>Achieved an overall 60% reduction of critical path of total execution compared to baseline configurations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
