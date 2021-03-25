@@ -9,19 +9,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html" id="about">About</a>
+                <a class="nav-link" href="index.html" id="nav-about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="work.html" id="work">Work</a>
+                <a class="nav-link" href="work.html" id="nav-work">Work</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="research.html" id="research">Research</a>
+                <a class="nav-link" href="research.html" id="nav-research">Research</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="interests.html" id="interests">Interests</a>
+                <a class="nav-link" href="interests.html" id="nav-interests">Interests</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html" id="contact">Contact</a>
+                <a class="nav-link" href="contact.html" id="nav-contact">Contact</a>
             </li>
         </ul>
     </div>
@@ -32,12 +32,14 @@
         }
         try {
             document.getElementById("page-name").textContent = active_page;
-            $('#'+active_page).addClass('active');
+            $('#nav-' + active_page).addClass('active');
         } catch (e) {
             console.log(e);
         }
-        
+
     </script>
 </nav>
 
-<a href="#page-top" id="gototop"><i class="fas fa-chevron-circle-up"></i></a>
+<div id="go-to-to-wrapper">
+    <a href="#page-top" id="gototop" aria-label="go-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+</div>

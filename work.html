@@ -33,25 +33,32 @@
 <body id="page-top">
     <div id="nav-placeholder"></div>
 
-    <div class="bg" id="work"></div>
+    <div class="bg container" id="work">
+        <div class="grids">
+            <div class="grid-item">
+                <h1>Work</h1>
+                <p>I worked as an intern at Huawei Cloud for 3 months. Prior to that I served as a teaching assistant for three courses at SJTU.</p>
+            </div>
+        </div>
+    </div>
 
     <main class="main-container">
         <div class="subcontainer">
             <div class="work text">
-                <a id="work"></a>
                 <h2>Work Experience</h2>
                 <div class="card-container">
                     <div class="card">
                         <i class="fas fa-laptop-house"></i>
-                        <h4 class="company"><b>Huawei, Intelligent EdgeFabric</b></h4>
+                        <h3 class="company"><b>Huawei, Intelligent EdgeFabric</b></h3>
                         <div class="info">
                             <div class="position">R&D Intern in cloud computing</div>
                             <div class="location">Hangzhou, China</div>
                             <div class="date">Jul 2020 - Sep 2020</div>
-                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#ief" id="ief" value="more">
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse"
+                                data-target="#desc-ief" id="ief" value="more">
                                 + more
                             </button>
-                            <div class="description collapse" id="ief">
+                            <div class="description collapse" id="desc-ief">
                                 <hr>
                                 <ul>
                                     <li>Monitored the status of core components in bash</li>
@@ -63,21 +70,25 @@
 
                     <div class="card">
                         <i class="fas fa-laptop-house"></i>
-                        <h4 class="company"><b>Smart & Sustainable Automation Lab</b></h4>
+                        <h3 class="company"><b>Smart & Sustainable Automation Lab</b></h3>
                         <div class="info">
                             <div class="position">Backend developer / Research Assistant</div>
                             <div class="location">Ann Arbor, U.S.</div>
                             <div class="date">Feb 2020 - Aug 2020</div>
-                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#s2a" id="s2a" value="more">
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse"
+                                data-target="#desc-s2a" id="s2a" value="more">
                                 + more
                             </button>
-                            <div class="description collapse" id="s2a">
+                            <div class="description collapse" id="desc-s2a">
                                 <hr>
                                 <ul>
                                     <li>Built an AWS-based Cloud 3D printing platform</li>
-                                    <li>Built look-free batched command buffers on edge side (Raspberry Pi) to smooth nozzle vibration
-                                    <li>Automated user registration, job creation, and device provisioning based on Lambda, Dynamo, S3, SNS, etc</li>
-                                    <li>Containerized the application as a serverless Fargate task and routed the traffic through NAT Gateway</li>
+                                    <li>Built look-free batched command buffers on edge side (Raspberry Pi) to smooth
+                                        nozzle vibration
+                                    <li>Automated user registration, job creation, and device provisioning based on
+                                        Lambda, Dynamo, S3, SNS, etc</li>
+                                    <li>Containerized the application as a serverless Fargate task and routed the
+                                        traffic through NAT Gateway</li>
                                 </ul>
                                 <img src="img/ulendo.jpg" alt="ulendo">
                             </div>
@@ -87,19 +98,19 @@
             </div>
 
             <div class="teach text">
-                <a id="teach"></a>
                 <h2>Teaching Experience</h2>
                 <div class="card-container">
                     <div class="card">
                         <i class="fas fa-school"></i>
-                        <h4 class="course"><b>Programming & Data Structures</b></h4>
+                        <h3 class="course"><b>Programming & Data Structures</b></h3>
                         <div class="info">
                             <div class="position">Shanghai Jiao Tong University</div>
                             <div class="date">Summer 2019</div>
-                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#ve280" id="ve280" value="more">
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse"
+                                data-target="#desc-ve280" id="ve280" value="more">
                                 + more
                             </button>
-                            <div class="description collapse" id="ve280">
+                            <div class="description collapse" id="desc-ve280">
                                 <hr>
                                 <ul>
                                     <li>Prepared testcases for 5 major projects</li>
@@ -111,14 +122,15 @@
 
                     <div class="card">
                         <i class="fas fa-school"></i>
-                        <h4 class="course"><b>Advanced Academic Writing</b></h4>
+                        <h3 class="course"><b>Advanced Academic Writing</b></h3>
                         <div class="info">
                             <div class="position">Shanghai Jiao Tong University</div>
                             <div class="date">Summer 2019</div>
-                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#ve496" id="ve496" value="more">
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse"
+                                data-target="#desc-ve496" id="ve496" value="more">
                                 + more
                             </button>
-                            <div class="description collapse" id="ve496">
+                            <div class="description collapse" id="desc-ve496">
                                 <hr>
                                 <ul>
                                     <li>Prepared workshops on academic communications</li>
@@ -131,17 +143,18 @@
 
                     <div class="card">
                         <i class="fas fa-school"></i>
-                        <h4 class="course"><b>Discrete Mathematics</b></h4>
+                        <h3 class="course"><b>Discrete Mathematics</b></h3>
                         <div class="info">
                             <div class="position">Shanghai Jiao Tong University</div>
                             <div class="date">Fall 2018</div>
-                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#ve203" id="ve203" value="more">
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse"
+                                data-target="#desc-ve203" id="ve203" value="more">
                                 + more
                             </button>
-                            <div class="description collapse" id="ve203">
+                            <div class="description collapse" id="desc-ve203">
                                 <hr>
                                 <ul>
-                                    <li>Prepared review class and lecture notes in LateX</li>
+                                    <li>Prepared review class and lecture notes in LaTeX</li>
                                     <li>Held regular review class and office hours</li>
                                     <li>Graded exam papers and assignments</li>
                                     <li>Awarded Excellent Teaching Assistant of 18 Fall</li>

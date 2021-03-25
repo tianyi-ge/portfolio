@@ -33,18 +33,24 @@
 <body id="page-top">
     <div id="nav-placeholder"></div>
 
-    <div class="bg" id="research"></div>
+    <div class="bg container" id="research">
+        <div class="grids">
+            <div class="grid-item">
+                <h1>Research</h1>
+                <p>I worked in two research labs. During my undergrad I focused on edge computing and container scheduling. During my grad I focused on distributed storage and fault-tolorence.</p>
+            </div>
+        </div>
+    </div>
 
 
     <main class="main-container">
         <div class="subcontainer">
             <div class="research text">
-                <a id="research"></a>
                 <h2>Research Experience</h2>
                 <div class="card-container">
                     <div class="card">
                         <i class="fas fa-lightbulb"></i>
-                        <h4 class="project"><b>Investigation of MongoDB Storage in Erasure Coding Manner</b></h4>
+                        <h3 class="project"><b>Investigation of MongoDB Storage in Erasure Coding Manner</b></h3>
                         <div class="info">
                             <div class="advisor">
                                 <ul>
@@ -57,11 +63,11 @@
                             </div>
                             <div class="location">Ann Arbor, U.S.</div>
                             <div class="date">Sep 2020 - Present</div>
-                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#mongo"
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#desc-mongo"
                                 id="mongo" value="more">
                                 + more
                             </button>
-                            <div class="description collapse" id="mongo">
+                            <div class="description collapse" id="desc-mongo">
                                 <hr>
                                 <ul>
                                     <li>Extend query operations of MongoDB to support erasure coded documents</li>
@@ -74,7 +80,7 @@
 
                     <div class="card">
                         <i class="fas fa-lightbulb"></i>
-                        <h4 class="project"><b>Joint Task Scheduling and Containerizing for Efficient Edge Computing</b></h4>
+                        <h3 class="project"><b>Joint Task Scheduling and Containerizing for Efficient Edge Computing</b></h3>
                         <div class="info">
                             <div class="advisor">
                                 <ul>
@@ -85,11 +91,11 @@
                             </div>
                             <div class="location">Shanghai, China</div>
                             <div class="date">Oct 2018 - Feb 2021</div>
-                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#wang"
+                            <button onclick="change(this.id)" class="more" data-toggle="collapse" data-target="#desc-wang"
                                 id="wang" value="more">
                                 + more
                             </button>
-                            <div class="description collapse" id="wang">
+                            <div class="description collapse" id="desc-wang">
                                 <hr>
                                 <ul>
                                     <li>Modeled four offline heuristics to optimize task containerization and scheduling</li>
