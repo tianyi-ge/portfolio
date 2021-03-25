@@ -47,13 +47,16 @@
                 <h2>Contact me</h2>
                 <form id="form-contact" action="" method="post">
                     <fieldset>
-                        <input placeholder="Your name" type="text" tabindex="0" required autofocus>
+                        <!-- <label for="name">Name</label> -->
+                        <input placeholder="Your name" type="text" aria-label="name" required autofocus>
                     </fieldset>
                     <fieldset>
-                        <input placeholder="Your email address" tabindex="0" required>
+                        <!-- <label for="email">Email address</label> -->
+                        <input placeholder="Your email address" aria-label="email" required>
                     </fieldset>
                     <fieldset>
-                        <textarea placeholder="Type your message...." tabindex="0" required></textarea>
+                        <!-- <label for="message">Message</label> -->
+                        <textarea placeholder="Type your message...." aria-label="message" required></textarea>
                     </fieldset>
                     <fieldset>
                         <button name="submit" id="contact-submit" data-submit="...Sending">Submit</button>
