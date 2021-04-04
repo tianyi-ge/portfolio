@@ -57,11 +57,22 @@ body {
     bottom: 20px;
     right: 30px;
     font-size: 40px;
-    background-color: var(--coo);
-    color: var(--color3);
+    background-color: transparent;
+    color: var(--color4);
     opacity: 0.8;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
+
+/* .skip {
+    background: white;
+    left: 0;
+    padding: 7px;
+    -webkit-transition: top 0.5s ease-out;
+    transition: top 0.5s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+} */
 
 .bg {
     background-color: var(--color6);
@@ -269,8 +280,9 @@ ul.social {
 }
 
 .card img {
-    max-width: 100%;
-    margin: 0 auto 25px auto;
+    display: block;
+    max-width: 80%;
+    margin: 20px auto;
 }
 
 /* work */
@@ -416,18 +428,15 @@ form#form-contact {
     .subcontainer {
         margin: 70px 80px 70px 80px;
     }
-
     .card-container {
         border-left: 2px solid var(--color1);
-        margin: 0 auto;
+        margin: 30px auto;
         max-width: 600px;
     }
-
     .card {
         margin-top: 20px;
         margin-left: 20px;
     }
-
     .card:before {
         content: '';
         display: block;
@@ -440,35 +449,49 @@ form#form-contact {
         top: 10px;
         left: -32px;
     }
-
     .subsection {
         max-width: 650px;
     }
+    .text h2 {
+        font-size: 32px;
+    }
+    .text h3 {
+        font-size: 28px;
+    }
+    .card div {
+        font-size: 14px;
+    }
+    .card h3 {
+        font-size: 20px;
+    }
+    /* .skip:focus {
+        top: 40px;
+        font-size: 90px;
+    } */
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     .intro {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 50px;
     }
-
     .intro #intro-img {
         justify-self: end;
         -ms-flex-item-align: center;
-            align-self: center;
+        align-self: center;
     }
-
     .intro .avatar {
-        margin: 0px 0px 0px auto; 
+        margin: 0px 0px 0px auto;
     }
-
     .intro #intro-text {
         text-align: left;
         justify-self: start;
         -ms-flex-item-align: center;
-            align-self: center;
+        align-self: center;
     }
 }
+
+@media only screen and (min-width: 1025px) {}
