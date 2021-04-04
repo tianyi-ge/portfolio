@@ -45,7 +45,7 @@ body {
     color: var(--color5);
 }
 
-.nav-item .active {
+nav .nav-item .active {
     font-weight: 900;
     text-decoration: underline;
 }
@@ -227,7 +227,7 @@ ul.social {
 
 .text h3 {
     font-family: Poppins, sans-serif;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .text p {
@@ -319,7 +319,7 @@ ul.social {
 }
 
 .subsection {
-    padding: 20px 20px 40px 20px;
+    padding: 0 20px;
     margin: 0 auto;
     max-width: 500px;
     /* background-color: var(--color2); */
@@ -339,12 +339,12 @@ ul.social {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
-    padding: 0 4px;
+    padding: 0 0.3em;
 }
 
 .gallery img {
     width: 100%;
-    margin-top: 8px;
+    margin-top: 0.6em;
     vertical-align: middle;
     box-shadow: 0 0 3px var(--color6);
 }
@@ -357,7 +357,7 @@ ul.social {
     padding: 0 4px;
 }
 
-.parallax {
+/* .parallax {
     background-color: var(--color6);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -369,12 +369,14 @@ ul.social {
     filter: brightness(80%);
     min-height: 100px;
     max-width: 100%;
-}
+} */
 
-#parallax-interests.parallax {
+/* #parallax-interests.parallax {
     background-image: url("../img/duncan.jpg");
     background-position: center;
-}
+} */
+
+
 
 /* contact */
 
@@ -387,7 +389,7 @@ ul.social {
 }
 
 form#form-contact {
-    /* max-width: 380px; */
+    max-width: 600px;
     padding: 20px 20px;
     margin: 0 auto;
 }
@@ -456,13 +458,13 @@ form#form-contact {
         font-size: 32px;
     }
     .text h3 {
-        font-size: 28px;
+        font-size: 18px;
     }
     .card div {
         font-size: 14px;
     }
     .card h3 {
-        font-size: 20px;
+        font-size: 17px;
     }
     /* .skip:focus {
         top: 40px;
