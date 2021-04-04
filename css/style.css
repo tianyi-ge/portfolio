@@ -13,6 +13,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -112,14 +113,13 @@ body {
 
 .grid-item h1 {
     font-size: 25px;
-    ;
 }
 
 .intro {
     font-family: Poppins, sans-serif;
     text-align: center;
-    margin-top: 85px;
-    margin-bottom: 70px;
+    margin-top: 95px;
+    margin-bottom: 50px;
 }
 
 .intro h1 {
@@ -243,7 +243,7 @@ ul.social {
     box-shadow: 2px 2px 8px var(--color4);
     color: var(--color6);
     padding: 20px 20px 20px 20px;
-    max-width: 380px;
+    /* max-width: 380px; */
     margin: 10px;
 }
 
@@ -308,6 +308,8 @@ ul.social {
 
 .subsection {
     padding: 20px 20px 40px 20px;
+    margin: 0 auto;
+    max-width: 500px;
     /* background-color: var(--color2); */
 }
 
@@ -373,7 +375,7 @@ ul.social {
 }
 
 form#form-contact {
-    max-width: 380px;
+    /* max-width: 380px; */
     padding: 20px 20px;
     margin: 0 auto;
 }
@@ -410,8 +412,63 @@ form#form-contact {
     }
 }
 
-@media (min-width: 768px) {
-    html, body {
-        scroll-behavior: smooth;
+@media only screen and (min-width: 768px) {
+    .subcontainer {
+        margin: 70px 80px 70px 80px;
+    }
+
+    .card-container {
+        border-left: 2px solid var(--color1);
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .card {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .card:before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--color4);
+        border: 4px solid white;
+        position: absolute;
+        top: 10px;
+        left: -32px;
+    }
+
+    .subsection {
+        max-width: 650px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .intro {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .intro #intro-img {
+        justify-self: end;
+        -ms-flex-item-align: center;
+            align-self: center;
+    }
+
+    .intro .avatar {
+        margin: 0px 0px 0px auto; 
+    }
+
+    .intro #intro-text {
+        text-align: left;
+        justify-self: start;
+        -ms-flex-item-align: center;
+            align-self: center;
     }
 }
