@@ -31,6 +31,10 @@ body {
     background-image: var(--gradient-img);
     font-family: Poppins, sans-serif;
     text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .navbar-brand-sm {
@@ -118,7 +122,6 @@ nav .nav-item .active {
     font-family: Poppins, sans-serif;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .intro h1 {
@@ -158,6 +161,10 @@ main p {
 
 .subcontainer {
     padding: 70px 25px 20px 25px;
+}
+
+#intro.subcontainer {
+    padding-bottom: 0;
 }
 
 footer {
@@ -419,12 +426,9 @@ form#form-contact {
     right: 30%;
     text-align: center;
     border-radius: 0 0 10px 10px;
+    opacity: 70%;
 
     top: -100px;
-}
-
-.skip:focus {
-    top: 0px;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -436,7 +440,10 @@ form#form-contact {
 
 @media only screen and (min-width: 768px) {
     .subcontainer {
-        padding: 70px 80px 70px 80px;
+        padding: 70px 120px 70px 120px;
+    }
+    #intro.subcontainer {
+        padding-bottom: 0;
     }
     .card-container {
         border-left: 2px solid var(--color1);
@@ -473,6 +480,10 @@ form#form-contact {
     }
     .card h3 {
         font-size: 17px;
+    }
+    .skip:focus {
+        top: 0px;
+        z-index:1000;
     }
 }
 
