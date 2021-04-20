@@ -30,11 +30,14 @@ body {
     background-color: var(--gradient-color);
     background-image: var(--gradient-img);
     font-family: Poppins, sans-serif;
-    text-transform: uppercase;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+}
+
+.navbar .active {
+    text-transform: uppercase;
 }
 
 .navbar-brand-sm {
@@ -81,6 +84,7 @@ nav .nav-item .active {
     height: 350px;
     max-width: 100%;
     color: var(--color1);
+    margin-bottom: 20px;
 }
 
 .grids {
@@ -88,8 +92,8 @@ nav .nav-item .active {
     display: grid;
     -ms-grid-rows: 4fr 7fr 1fr !important;
     grid-template-rows: 4fr 7fr 1fr !important;
-    -ms-grid-columns: 4fr 8fr 1fr;
-    grid-template-columns: 4fr 8fr 1fr;
+    -ms-grid-columns: 5fr 8fr 1fr;
+    grid-template-columns: 5fr 8fr 1fr;
     -ms-grid-row-align: center;
     align-items: center;
     -webkit-box-pack: stretch;
@@ -101,8 +105,10 @@ nav .nav-item .active {
 
 .grid-item {
     grid-area: 2 / 2 / 3 / 3;
-    max-height: 100%;
+    height: 100%;
     width: 100%;
+    min-width: 250px;
+    max-width: 600px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     background-color: rgba(0, 0, 0, .55);
     -webkit-backdrop-filter: blur(5px);
@@ -142,7 +148,7 @@ nav .nav-item .active {
     max-height: 210px;
     overflow: hidden;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px var(--color3);
+    box-shadow: 0 0 20px var(--color3);
 }
 
 .intro span {
@@ -160,7 +166,7 @@ main p {
 }
 
 .subcontainer {
-    padding: 70px 25px 20px 25px;
+    padding: 50px 25px 40px 25px;
 }
 
 #intro.subcontainer {
@@ -212,12 +218,13 @@ ul.social {
 }
 
 .text a {
-    color: var(--color4);
+    color: var(--color5);
+    /* text-decoration: underline; */
 }
 
 .text h2 {
     font-family: Poppins, sans-serif;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .text h3 {
@@ -229,9 +236,9 @@ ul.social {
     font-family: Poppins, sans-serif;
 }
 
-.text {
-    margin-bottom: 50px;
-}
+/* .text {
+    padding: 50px 0px;
+} */
 
 /* education */
 
@@ -247,7 +254,7 @@ ul.social {
 .card {
     display: inline;
     box-shadow: 2px 2px 8px var(--color4);
-    color: var(--color6);
+    color: var(--color7);
     padding: 20px 20px 20px 20px;
     /* max-width: 380px; */
     margin: 10px;
@@ -266,12 +273,12 @@ ul.social {
 }
 
 .card .more {
-    color: var(--color4);
+    color: var(--color6);
     display: block;
     position: absolute;
     right: 10px;
     bottom: 8px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .card img {
@@ -296,7 +303,7 @@ ul.social {
 
 #research.bg {
     background-image: url("../img/duder.jpg");
-    background-position: bottom right 25%;
+    background-position: bottom center;
 }
 
 /* interests */
@@ -440,7 +447,8 @@ form#form-contact {
 
 @media only screen and (min-width: 768px) {
     .subcontainer {
-        padding: 70px 120px 70px 120px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
     #intro.subcontainer {
         padding-bottom: 0;
@@ -470,7 +478,7 @@ form#form-contact {
         max-width: 650px;
     }
     .text h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
     .text h3 {
         font-size: 18px;
@@ -484,6 +492,12 @@ form#form-contact {
     .skip:focus {
         top: 0px;
         z-index:1000;
+    }
+    .grid-item p {
+        font-size: 16px;
+    }
+    .grid-item h1 {
+        font-size: 30px;
     }
 }
 
@@ -511,4 +525,80 @@ form#form-contact {
     }
 }
 
-@media only screen and (min-width: 1025px) {}
+@media only screen and (min-width: 1025px) {
+    main p {
+        font-size: 16px;
+    }
+    .work.text, .research.text {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 3fr 5fr;
+        grid-template-columns: 3fr 5fr;
+    }
+
+    /* .work.text h2, .research.text h2 {
+        background-color: var(--color1);
+    } */
+
+    .subcontainer {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .grids {
+        -ms-grid-rows: 4fr 5fr 2fr !important;
+        grid-template-rows: 4fr 5fr 2fr !important;
+    }
+    .grid-item {
+        padding: 25px;
+    }
+    .grid-item p {
+        font-size: 18px;
+    }
+    .grid-item h1 {
+        font-size: 30px;
+    }
+    .card-container {
+        margin: 0;
+    }
+    .bg {
+        height: 450px;
+        margin-bottom: 70px;
+    }
+    
+    #about-container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 3fr 5fr;
+        grid-template-columns: 3fr 5fr;
+    }
+    #about-container .subcontainer {
+        padding: 70px 10px;
+        margin: 50px 100px;
+    }
+    .about.text {
+        margin-bottom: 80px;
+    }
+    #intro.subcontainer {
+        padding-top: 20px;
+        margin-right: 10px;
+    }
+    #content.subcontainer {
+        margin-left: 10px;
+    }
+    .intro .avatar {
+        max-height: 240px;
+    }
+
+
+
+    .text a:hover, .card .more:hover {
+        text-decoration: underline;
+    }
+    .card {
+        transition: 0.2s;
+    }
+    .card:hover {
+        box-shadow: 2px 5px 13px var(--color4);
+    }    
+}
