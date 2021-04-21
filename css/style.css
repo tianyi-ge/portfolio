@@ -195,19 +195,22 @@ footer hr {
 }
 
 ul.social {
+    display: grid;
+    grid-template-columns: 35px 35px 35px;
+    justify-items: center;
+    column-gap: 8px;
     margin: 0 auto;
-    margin-top: 0px;
+    width: 120px;
 }
 
 .social li {
     display: inline;
+    max-width: 35px;
 }
 
 .social-icon i {
     font-size: 1.8em;
-    /* border-radius: 50%; */
-    /* border: 2px solid grey; */
-    color: var(--color6);
+    color: var(--color5);
     width: 35px;
 }
 
@@ -218,7 +221,6 @@ ul.social {
 
 .text a {
     color: var(--color5);
-    /* text-decoration: underline; */
 }
 
 .text h2 {
@@ -277,7 +279,6 @@ ul.social {
     position: absolute;
     right: 10px;
     bottom: 8px;
-    /* text-decoration: underline; */
 }
 
 .card img {
@@ -359,7 +360,7 @@ ul.social {
     padding: 0 4px;
 }
 
-.nav-pills > .nav-item > .active{
+.nav-pills>.nav-item>.active {
     background-color: var(--color4);
 }
 
@@ -428,7 +429,6 @@ form#form-contact {
     background: var(--color6);
     color: white;
     position: absolute;
-
     width: 180px;
     height: 30px;
     margin-left: auto;
@@ -438,15 +438,7 @@ form#form-contact {
     text-align: center;
     border-radius: 0 0 10px 10px;
     opacity: 70%;
-
     top: -100px;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-        /* Removes scroll animation */
-    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -496,7 +488,7 @@ form#form-contact {
     }
     .skip:focus {
         top: 0px;
-        z-index:1000;
+        z-index: 1000;
     }
     .grid-item p {
         font-size: 16px;
@@ -551,16 +543,13 @@ form#form-contact {
         -ms-grid-columns: 3fr 5fr;
         grid-template-columns: 3fr 5fr;
     }
-
     .subsection {
         max-width: 850px;
     }
-
     .subcontainer {
         padding-left: 200px;
         padding-right: 200px;
     }
-
     .grids {
         -ms-grid-rows: 4fr 5fr 2fr !important;
         grid-template-rows: 4fr 5fr 2fr !important;
@@ -580,7 +569,6 @@ form#form-contact {
     .bg {
         height: 450px;
     }
-    
     #about-container {
         display: -ms-grid;
         display: grid;
@@ -610,13 +598,10 @@ form#form-contact {
     .column {
         padding: 0 0.5em;
     }
-
-    .interests.text > h2, .contact.text > h2 {
+    .interests.text>h2, .contact.text>h2 {
         color: transparent;
         position: absolute;
     }
-
-
     .text a:hover, .card .more:hover {
         text-shadow: 1px 1px 8px var(--color4);
     }
@@ -625,5 +610,32 @@ form#form-contact {
     }
     .card:hover {
         box-shadow: 2px 5px 13px var(--color4);
-    }    
+    }
+    .social-icon i:hover {
+        color: var(--color3);
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html, .card {
+        scroll-behavior: auto;
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
 }
