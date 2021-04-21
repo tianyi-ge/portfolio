@@ -233,6 +233,11 @@ ul.social {
     padding: 50px 0px;
 } */
 
+.flip-box-back h1 {
+    color: transparent;
+    position: absolute;
+}
+
 /* education */
 
 .card-container {
@@ -643,6 +648,39 @@ form#form-contact {
     .fade-in-up {
         animation-name: fade-in-up;
         animation-duration: 0.5s;
+    }
+    /* flip-box */
+    .flip-box {
+        background-color: transparent;
+        perspective: 600px;
+        height: 60px;
+    }
+    .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.5s;
+        transform-style: preserve-3d;
+    }
+    .flip-box:hover .flip-box-inner {
+        transform: rotateX(180deg);
+        transition: transform 0.5s;
+    }
+    .flip-box-front, .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    .flip-box-front {
+    }
+    .flip-box-back {
+        transform: rotateX(180deg);
+    }
+    .flip-box-back h1 {
+        color: black;
+        position: relative;
     }
 }
 
