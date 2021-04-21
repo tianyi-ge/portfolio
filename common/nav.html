@@ -1,6 +1,6 @@
 <a href="#content" class="skip">Skip to main content</a>
 
-<nav class="navbar navbar-expand-sm navbar-light">
+<nav class="navbar navbar-expand-sm navbar-light" id="main-navbar">
 
     <a class="navbar-brand-sm" href="#page-top">/home/tianyi/<span id="page-name">about</span></a>
 
@@ -10,7 +10,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" id="main-navbar-content">
             <li class="nav-item">
                 <a class="nav-link" href="index.html" id="nav-about">About</a>
             </li>
@@ -28,17 +28,5 @@
             </li>
         </ul>
     </div>
-    <script>
-        var active_page = location.href.split('/').pop().split('#').shift().split('.').shift();
-        if (active_page == 'index' || active_page == 'portfolio' || active_page == '') {
-            active_page = 'about';
-        }
-        try {
-            document.getElementById("page-name").textContent = active_page;
-            $('#nav-' + active_page).addClass('active');
-        } catch (e) {
-            console.log(e);
-        }
-
-    </script>
+    <script src="../assets/js/main.js"></script>
 </nav>
