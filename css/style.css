@@ -364,34 +364,7 @@ ul.social {
     background-color: var(--color4);
 }
 
-/* .parallax {
-    background-color: var(--color6);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -moz-babackground-size: cover;
-    -o-babackground-size: cover;
-    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.8" /><feFuncG type="linear" slope="0.8" /><feFuncB type="linear" slope="0.8" /></feComponentTransfer></filter></svg>#filter');
-    -webkit-filter: brightness(80%);
-    filter: brightness(80%);
-    min-height: 100px;
-    max-width: 100%;
-} */
-
-/* #parallax-interests.parallax {
-    background-image: url("../img/duncan.jpg");
-    background-position: center;
-} */
-
 /* contact */
-
-#form-contact fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
-}
 
 form#form-contact {
     max-width: 600px;
@@ -399,7 +372,8 @@ form#form-contact {
     margin: 0 auto;
 }
 
-#form-contact input, textarea {
+#form-contact input,
+#form-contact textarea {
     font-family: Poppins, sans-serif;
     font-size: 14px;
     width: 100%;
@@ -421,6 +395,7 @@ form#form-contact {
     color: white;
     margin: 0 0 5px;
     padding: 10px;
+    font-family: Poppins, sans-serif;
     font-size: 15px;
 }
 
@@ -598,11 +573,19 @@ form#form-contact {
     .column, .wide {
         padding: 0 0.5em;
     }
-    .interests.text>h2, .contact.text>h2 {
+    .interests.text>h2,
+    .contact.text>h2 {
         color: transparent;
         position: absolute;
     }
-    .text a:hover, .card .more:hover {
+
+    #form-contact input,
+    #form-contact textarea {
+        font-size: 16px;
+    }
+
+    .text a:hover,
+    .card .more:hover {
         text-shadow: 1px 1px 8px var(--color4);
     }
     .card {
@@ -617,7 +600,8 @@ form#form-contact {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-    html, .card {
+    html,
+    .card {
         scroll-behavior: auto;
         /*CSS transitions*/
         -o-transition-property: none !important;
