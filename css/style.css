@@ -624,6 +624,7 @@ form#form-contact {
         background-color: #ffffff26;
     }
     .intro .avatar:hover {
+        transition: 0.2s;
         box-shadow: 0 0 30px var(--color4);
     }
     .text a:hover, .card .more:hover {
@@ -641,12 +642,12 @@ form#form-contact {
     }
     .fade-in-up {
         animation-name: fade-in-up;
-        animation-duration: 1s;
+        animation-duration: 0.5s;
     }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-    html, .card {
+    html, .card, .grid-item {
         scroll-behavior: auto;
         /*CSS transitions*/
         -o-transition-property: none !important;
