@@ -146,6 +146,7 @@ nav .nav-item .active {
     max-height: 210px;
     overflow: hidden;
     margin-bottom: 20px;
+    background-image: url('../img/portfolio.jpg');
     box-shadow: 0 0 20px var(--color3);
 }
 
@@ -363,8 +364,7 @@ form#form-contact {
     margin: 0 auto;
 }
 
-#form-contact input,
-#form-contact textarea {
+#form-contact input, #form-contact textarea {
     font-family: Poppins, sans-serif;
     font-size: 14px;
     width: 100%;
@@ -408,8 +408,7 @@ form#form-contact {
 }
 
 @media only screen and (min-width: 768px) {
-    a.navbar-brand-sm,
-    #page-name {
+    a.navbar-brand-sm, #page-name {
         display: none;
     }
     .subcontainer {
@@ -503,6 +502,17 @@ form#form-contact {
     }
 }
 
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translate3d(10%, -10%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 @media only screen and (min-width: 1025px) {
     main p {
         font-size: 15px;
@@ -568,13 +578,11 @@ form#form-contact {
     .column, .wide {
         padding: 0 0.5em;
     }
-    .interests.text>h2,
-    .contact.text>h2 {
+    .interests.text>h2, .contact.text>h2 {
         color: transparent;
         position: absolute;
     }
-    #form-contact input,
-    #form-contact textarea {
+    #form-contact input, #form-contact textarea {
         font-size: 16px;
     }
     .navbar {
@@ -594,47 +602,35 @@ form#form-contact {
     .nav-link {
         font-size: 1.25em;
     }
-
-    ul.navbar-nav,
-    nav.navbar {
+    ul.navbar-nav, nav.navbar {
         display: flex;
         flex-direction: column;
     }
     .nav-link {
         color: white;
     }
-
+    .card .more {
+        font-size: 16px;
+    }
     /* collapse? */
     .navbar {
         margin-left: 0;
     }
-    main.main-container,
-    footer {
+    main.main-container, footer {
         margin-left: 180px;
     }
-
-
-
     /*  */
-    .nav-link:active,
-    .nav-link:focus,
-    .nav-link:hover {
+    .nav-link:active, .nav-link:focus, .nav-link:hover {
         background-color: #ffffff26;
-    }
-    .intro .avatar {
-        transition: 0.2s;
     }
     .intro .avatar:hover {
         box-shadow: 0 0 30px var(--color4);
     }
-    .text a:hover,
-    .card .more:hover {
+    .text a:hover, .card .more:hover {
         text-shadow: 1px 1px 8px var(--color4);
     }
-    .card {
-        transition: 0.2s;
-    }
     .card:hover {
+        transition: 0.2s;
         box-shadow: 2px 5px 13px var(--color4);
     }
     .social-icon i:hover {
@@ -643,11 +639,14 @@ form#form-contact {
     #form-contact button:hover {
         background-color: var(--color4);
     }
+    .fade-in-up {
+        animation-name: fade-in-up;
+        animation-duration: 1s;
+    }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-    html,
-    .card {
+    html, .card {
         scroll-behavior: auto;
         /*CSS transitions*/
         -o-transition-property: none !important;
