@@ -357,7 +357,7 @@ ul.social {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
-    padding: 0 4px;
+    padding: 0 0.3em;
 }
 
 .nav-pills>.nav-item>.active {
@@ -595,7 +595,7 @@ form#form-contact {
     .gallery img {
         margin-top: 1em;
     }
-    .column {
+    .column, .wide {
         padding: 0 0.5em;
     }
     .interests.text>h2, .contact.text>h2 {
