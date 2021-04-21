@@ -308,7 +308,7 @@ ul.social {
 
 #contact.bg {
     background-image: url("../img/bg.jpg");
-    background-position: bottom right 25%;
+    background-position: bottom right;
 }
 
 .subsection {
@@ -620,6 +620,12 @@ form#form-contact {
     .nav-link:focus,
     .nav-link:hover {
         background-color: #ffffff26;
+    }
+    .intro .avatar {
+        transition: 0.2s;
+    }
+    .intro .avatar:hover {
+        box-shadow: 0 0 30px var(--color4);
     }
     .text a:hover,
     .card .more:hover {
