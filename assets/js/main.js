@@ -15,8 +15,7 @@ try {
         $navbar_content = $('ul#main-navbar-content');
 
     function resize() {
-        console.log($window.width(), $window.innerWidth())
-        if ($window.width() > 1024) {
+        if ($window.outerWidth() > 1024) {
             $navbar.removeClass('navbar-light');
             $navbar.addClass('navbar-dark d-flex flex-column');
             $navbar_content.addClass('d-flex flex-column');
