@@ -84,7 +84,6 @@ nav .nav-item .active {
     height: 350px;
     max-width: 100%;
     color: var(--color1);
-    margin-bottom: 20px;
 }
 
 .grids {
@@ -337,10 +336,10 @@ ul.social {
 }
 
 .column {
-    -webkit-box-flex: 50%;
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
     padding: 0 0.3em;
 }
 
@@ -349,6 +348,7 @@ ul.social {
     margin-top: 0.6em;
     vertical-align: middle;
     box-shadow: 0 0 3px var(--color6);
+    border-radius: 5px;
 }
 
 .wide {
@@ -357,6 +357,10 @@ ul.social {
     flex: 100%;
     max-width: 100%;
     padding: 0 4px;
+}
+
+.nav-pills > .nav-item > .active{
+    background-color: var(--color4);
 }
 
 /* .parallax {
@@ -479,6 +483,7 @@ form#form-contact {
     }
     .text h2 {
         font-size: 28px;
+        padding-right: 18px;
     }
     .text h3 {
         font-size: 18px;
@@ -498,6 +503,17 @@ form#form-contact {
     }
     .grid-item h1 {
         font-size: 30px;
+    }
+    .gallery img {
+        margin-top: 0.8em;
+        border-radius: 8px;
+    }
+    .column {
+        padding: 0 0.4em;
+        -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
@@ -536,9 +552,9 @@ form#form-contact {
         grid-template-columns: 3fr 5fr;
     }
 
-    /* .work.text h2, .research.text h2 {
-        background-color: var(--color1);
-    } */
+    .subsection {
+        max-width: 850px;
+    }
 
     .subcontainer {
         padding-left: 200px;
@@ -563,7 +579,6 @@ form#form-contact {
     }
     .bg {
         height: 450px;
-        margin-bottom: 70px;
     }
     
     #about-container {
@@ -589,11 +604,21 @@ form#form-contact {
     .intro .avatar {
         max-height: 240px;
     }
+    .gallery img {
+        margin-top: 1em;
+    }
+    .column {
+        padding: 0 0.5em;
+    }
 
+    .interests.text > h2, .contact.text > h2 {
+        color: transparent;
+        position: absolute;
+    }
 
 
     .text a:hover, .card .more:hover {
-        text-decoration: underline;
+        text-shadow: 1px 1px 8px var(--color4);
     }
     .card {
         transition: 0.2s;
