@@ -233,8 +233,8 @@ ul.social {
     padding: 50px 0px;
 } */
 
-.flip-box-back h1 {
-    color: transparent;
+.flip-box-back {
+    opacity: 0;
     position: absolute;
 }
 
@@ -672,6 +672,7 @@ form#form-contact {
         transition: all 0.2s ease;
     }
     .flip-box-back {
+        opacity: 1;
         transform: translateY(30px) rotateX(-90deg);
     }
     .flip-box-back h1 {
@@ -687,7 +688,7 @@ form#form-contact {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-    html, .card, .grid-item {
+    * {
         scroll-behavior: auto;
         /*CSS transitions*/
         -o-transition-property: none !important;
@@ -707,5 +708,8 @@ form#form-contact {
         -o-animation: none !important;
         -ms-animation: none !important;
         animation: none !important;
+    }
+    .flip-box-back {
+        opacity: 0;
     }
 }
