@@ -186,9 +186,14 @@ footer {
 }
 
 ul.social {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 35px 35px 35px;
     grid-template-columns: 35px 35px 35px;
+    -ms-grid-column-align: center;
     justify-items: center;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
     column-gap: 8px;
     margin-left: auto;
     margin-right: auto;
@@ -235,6 +240,7 @@ ul.social {
 
 .flip-box-back {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     position: absolute;
 }
 
@@ -361,6 +367,10 @@ ul.social {
     background-color: var(--color5);
 }
 
+.nav-pills>.nav-item:hover {
+    background-color: var(--color2);
+}
+
 /* contact */
 
 form#form-contact {
@@ -409,6 +419,7 @@ form#form-contact {
     text-align: center;
     border-radius: 0 0 10px 10px;
     opacity: 70%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=NaN)";
     top: -100px;
 }
 
@@ -507,13 +518,32 @@ form#form-contact {
     }
 }
 
-@keyframes fade-in-up {
+@-webkit-keyframes fade-in-up {
     from {
         opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: translate3d(10%, -10%, 0);
         transform: translate3d(10%, -10%, 0);
     }
     to {
         opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: translate3d(10%, -10%, 0);
+        transform: translate3d(10%, -10%, 0);
+    }
+    to {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
 }
@@ -571,9 +601,6 @@ form#form-contact {
         padding-top: 20px;
         margin-right: 50px;
     }
-    #content.subcontainer {
-        margin-left: 10px;
-    }
     .intro .avatar {
         max-height: 200px;
     }
@@ -597,7 +624,9 @@ form#form-contact {
         position: fixed;
         margin-left: -180px;
         background-image: url('../img/alex.jpg');
-        filter: brightness(90%);
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.99" /><feFuncG type="linear" slope="0.99" /><feFuncB type="linear" slope="0.99" /></feComponentTransfer></filter></svg>#filter');
+        -webkit-filter: brightness(99%);
+                filter: brightness(99%);
         background-position: center;
     }
     .navbar-nav {
@@ -607,7 +636,12 @@ form#form-contact {
         font-size: 1.25em;
     }
     ul.navbar-nav, nav.navbar {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .nav-link {
@@ -628,6 +662,7 @@ form#form-contact {
         background-color: #ffffff26;
     }
     .intro .avatar:hover {
+        -webkit-transition: all 0.2s ease;
         transition: all 0.2s ease;
         box-shadow: 0 0 30px var(--color4);
     }
@@ -635,6 +670,7 @@ form#form-contact {
         text-shadow: 1px 1px 8px var(--color4);
     }
     .card:hover {
+        -webkit-transition: all 0.2s ease;
         transition: all 0.2s ease;
         box-shadow: 2px 5px 13px var(--color4);
     }
@@ -648,12 +684,15 @@ form#form-contact {
         color: var(--color3);
     }
     .fade-in-up {
+        -webkit-animation-name: fade-in-up;
         animation-name: fade-in-up;
+        -webkit-animation-duration: 0.5s;
         animation-duration: 0.5s;
     }
     /* flip-box */
     .flip-box {
         background-color: transparent;
+        -webkit-perspective: 1000px;
         perspective: 1000px;
         height: 60px;
     }
@@ -662,27 +701,34 @@ form#form-contact {
         width: 100%;
         height: 100%;
         text-align: center;
+        -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
     }
     .flip-box-front, .flip-box-back {
         position: absolute;
         width: 100%;
         height: 100%;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        -webkit-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
     .flip-box-back {
         opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transform: translateY(30px) rotateX(-90deg);
         transform: translateY(30px) rotateX(-90deg);
     }
     .flip-box-back h1 {
         color: black;
         position: relative;
     }
-    .flip-box:hover .flip-box-front {
+    .flip-box:hover .flip-box-front, .flip-box:focus .flip-box-front {
+        -webkit-transform: translateY(-30px) rotateX(90deg);
         transform: translateY(-30px) rotateX(90deg);
     }
-    .flip-box:hover .flip-box-back {
+    .flip-box:hover .flip-box-back, .flip-box:focus .flip-box-back {
+        -webkit-transform: rotateX(0deg);
         transform: rotateX(0deg);
     }
 }
@@ -691,25 +737,17 @@ form#form-contact {
     * {
         scroll-behavior: auto;
         /*CSS transitions*/
-        -o-transition-property: none !important;
-        -moz-transition-property: none !important;
-        -ms-transition-property: none !important;
         -webkit-transition-property: none !important;
         transition-property: none !important;
         /*CSS transforms*/
-        -o-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
         -webkit-transform: none !important;
         transform: none !important;
         /*CSS animations*/
         -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
         animation: none !important;
     }
     .flip-box-back {
         opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     }
 }
