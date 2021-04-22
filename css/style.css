@@ -596,7 +596,6 @@ form#form-contact {
         height: 100vh;
         position: fixed;
         margin-left: -180px;
-        /* transition: 0.1s; */
         background-image: url('../img/alex.jpg');
         filter: brightness(90%);
         background-position: center;
@@ -629,14 +628,14 @@ form#form-contact {
         background-color: #ffffff26;
     }
     .intro .avatar:hover {
-        transition: 0.2s;
+        transition: all 0.2s ease;
         box-shadow: 0 0 30px var(--color4);
     }
     .text a:hover, .card .more:hover {
         text-shadow: 1px 1px 8px var(--color4);
     }
     .card:hover {
-        transition: 0.2s;
+        transition: all 0.2s ease;
         box-shadow: 2px 5px 13px var(--color4);
     }
     .social-icon i:hover {
@@ -645,6 +644,9 @@ form#form-contact {
     #form-contact button:hover {
         background-color: var(--color4);
     }
+    #gototop:hover {
+        color: var(--color3);
+    }
     .fade-in-up {
         animation-name: fade-in-up;
         animation-duration: 0.5s;
@@ -652,7 +654,7 @@ form#form-contact {
     /* flip-box */
     .flip-box {
         background-color: transparent;
-        perspective: 600px;
+        perspective: 1000px;
         height: 60px;
     }
     .flip-box-inner {
@@ -660,27 +662,27 @@ form#form-contact {
         width: 100%;
         height: 100%;
         text-align: center;
-        transition: transform 0.5s;
         transform-style: preserve-3d;
-    }
-    .flip-box:hover .flip-box-inner {
-        transform: rotateX(180deg);
-        transition: transform 0.5s;
     }
     .flip-box-front, .flip-box-back {
         position: absolute;
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
-    }
-    .flip-box-front {
+        transition: all 0.2s ease;
     }
     .flip-box-back {
-        transform: rotateX(180deg);
+        transform: translateY(30px) rotateX(-90deg);
     }
     .flip-box-back h1 {
         color: black;
         position: relative;
+    }
+    .flip-box:hover .flip-box-front {
+        transform: translateY(-30px) rotateX(90deg);
+    }
+    .flip-box:hover .flip-box-back {
+        transform: rotateX(0deg);
     }
 }
 
