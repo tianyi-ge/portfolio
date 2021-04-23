@@ -710,24 +710,26 @@ form#form-contact {
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        -webkit-transition: all 0.2s ease;
-        transition: all 0.2s ease;
+        -webkit-transition: all 0.22s ease;
+        transition: all 0.22s ease;
     }
     .flip-box-back {
-        opacity: 1;
+        opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        -webkit-transform: translateY(30px) rotateX(-90deg);
-        transform: translateY(30px) rotateX(-90deg);
+        -webkit-transform: translateY(-30px) rotateX(-90deg);
+        transform: translateY(-30px) rotateX(-90deg);
     }
     .flip-box-back h1 {
         color: black;
         position: relative;
     }
     .flip-box:hover .flip-box-front, .flip-box:focus .flip-box-front {
-        -webkit-transform: translateY(-30px) rotateX(90deg);
-        transform: translateY(-30px) rotateX(90deg);
+        opacity: 0;
+        -webkit-transform: translateY(30px) rotateX(90deg);
+        transform: translateY(30px) rotateX(90deg);
     }
     .flip-box:hover .flip-box-back, .flip-box:focus .flip-box-back {
+        opacity: 1;
         -webkit-transform: rotateX(0deg);
         transform: rotateX(0deg);
     }
