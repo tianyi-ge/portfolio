@@ -363,12 +363,13 @@ ul.social {
     padding: 0 0.3em;
 }
 
-.nav-pills>.nav-item>.active {
-    background-color: var(--color5);
+.nav-pills>.nav-item>.nav-link {
+    border-radius: 20px;
+    margin: 0 10px;
 }
 
-.nav-pills>.nav-item:hover {
-    background-color: var(--color2);
+.nav-pills>.nav-item>.active {
+    background-color: var(--color5);
 }
 
 /* contact */
@@ -660,6 +661,9 @@ form#form-contact {
     /*  */
     .nav-link:active, .nav-link:focus, .nav-link:hover {
         background-color: #ffffff26;
+    }
+    .nav-pills>.nav-item:hover .nav-link:not(.active) {
+        background-color: var(--color2);
     }
     .intro .avatar:hover {
         -webkit-transition: all 0.2s ease;
